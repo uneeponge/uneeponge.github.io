@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Inter';
+}
+
+.BarTop {
+    background: rgb(255,127,80);
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: left; /* Center content horizontally */
+}
+
+
+/* Navigation List */
+.ListMenuTop {
+    box-sizing: border-box;
+    font-size: 22px; /* Adjust font size */
+    height: 120px;
+    max-height: 120px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: scroll;
+    list-style-type: none;
+    margin-left: 140px;
+    margin-top: 0;
+    gap: 40px; /* Spacing between links */
+}
+
+/* Individual List Items */
+.ListMenuTop li {
+    display: flex;
+    justify-content: left;
+    z-index: 100;
+}
+
+/* Links inside List Items */
+.ListMenuTop li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Link color */
+    font-family: inter;
+    display: block; /* Block-level to allow padding and clicking */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    z-index: 100;
+    padding: 47px;
+}
+
+/* Hover Effect */
+.ListMenuTop li a:hover {
+    color: black; /* Text color changes to white on hover */
+    background-color: grey; /* Background color on hover */
+}
+
+.ListMenuTop li a:visited {
+    text-decoration: none;
+}
+
+main {
+    padding-top: 150px;
+    font-family: inter;
+    width: 90%;
+    margin-left: auto;
+}
+
+.TopOfPage {
+    display: flex;
+    flex-direction: row;
+}
+
+.Salutations {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.aboutMe {
+    position: relative;
+    float: right;
+    padding: 20px;
+    border-left: 2px solid rgb(180, 180, 180);
+    max-width: 20%;
+    margin-left: auto;
+}
+
+.AboutMeTopLine {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#PictureForAbout {
+    max-height: 30%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.Tools {
+    display: flex;
+    padding: 20px;
+    width: 70%;
+}
+
+footer {
+    background-color: rgb(222, 222, 222);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+
+footer ul {
+    margin-left: 220px;
+}
